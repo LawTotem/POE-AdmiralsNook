@@ -11,25 +11,49 @@ import { rendererConfig } from './webpack.renderer.config';
 
 const config: ForgeConfig = {
   packagerConfig: {
-    asar: true,
+    icon: './icons/ChestIcon'
   },
   rebuildConfig: {},
-  makers: [new MakerSquirrel({}), new MakerZIP({}, ['darwin']), new MakerRpm({}), new MakerDeb({})],
+  makers: [new MakerSquirrel({}), new MakerZIP({})],
   plugins: [
-    new AutoUnpackNativesPlugin({}),
     new WebpackPlugin({
+      devContentSecurityPolicy: 'img-src *',
       mainConfig,
       renderer: {
         config: rendererConfig,
         entryPoints: [
           {
-            html: './src/index.html',
-            js: './src/renderer.ts',
-            name: 'main_window',
+            html: './src/settings/settings.html',
+            js: './src/settings/renderer.ts',
+            name: 'settings_window',
             preload: {
-              js: './src/preload.ts',
+              js: './src/settings/preload.ts',
             },
           },
+          {
+            html: './src/inventory/inventoryview.html',
+            js: './src/inventory/renderer.ts',
+            name: 'inventory_view_window',
+            preload: {
+              js: './src/inventory/preload.ts'
+            }
+          },
+          {
+            html: './src/search_edit/searchedit.html',
+            js: './src/search_edit/renderer.ts',
+            name: 'search_edit_window',
+            preload: {
+              js: './src/search_edit/preload.ts'
+            }
+          },
+          {
+            html: './src/itemview/itemview.html',
+            js: './src/itemview/renderer.ts',
+            name: 'item_view_window',
+            preload: {
+              js: './src/itemview/preload.ts'
+            }
+          }
         ],
       },
     }),

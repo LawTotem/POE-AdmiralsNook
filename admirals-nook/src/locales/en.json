@@ -1,0 +1,55 @@
+{
+    "locale": {
+        "select": "Select Language",
+        "en": "English"
+    },
+    "common":{
+        "common_settings": "Common Settings",
+        "league": "League",
+        "accountname": "Account Name",
+        "poesessid": "POESESSID",
+        "savesettings": "Save Settings",
+        "dumptab": "Dump Tab",
+        "search_filename": "Search Filename",
+        "load_tabs": "Load Tab",
+        "tab": "Tab",
+        "edit": "Edit",
+        "save": "Save",
+        "cancel": "Cancel",
+        "value_max": "Check <=",
+        "value_min": "Check >=",
+        "remove": "Remove",
+        "active": "Active",
+        "inv_search": "Stash Search",
+        "item_search": "Item Search",
+        "group_search": "Grouping",
+        "query_search": "Match",
+        "item_search_name": "Name",
+        "group_name": "Name",
+        "auto_fetch": "Auto Fetch",
+        "confirm_remove": "Confirm Remove",
+        "clear": "Clear",
+        "copy": "Copy",
+        "paste": "Paste",
+        "processing": "Processing"
+    },
+    "querytype":{
+        "": "Choose type",
+        "BaseType": "Base Type",
+        "Corrupt": "Is Corrupted",
+        "Synthesized": "Is Synthesized",
+        "Fractured": "Is Fractured",
+        "AnyMod": "Any (Implicit/Explicit) Mod",
+        "ExplicitMod": "Explicit Mod",
+        "ImplicitMod": "Implicit Mod",
+        "FracturedMod": "Fractured Mod",
+        "Unknown": "Invalid"
+    },
+    "masktype":{
+        "": "Choose type",
+        "GroupAnd": "And",
+        "GroupCount": "Count",
+        "GroupNot": "Not",
+        "Unknown": "Invalid"
+    }
+}

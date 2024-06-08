@@ -1,22 +1,22 @@
 {
   "name": "admirals-nook",
   "productName": "admirals-nook",
-  "version": "1.0.0",
-  "description": "My Electron application description",
+  "version": "0.1.0",
+  "description": "Path of Exile Dump Tab Searcher",
   "main": ".webpack/main",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "eslint --ext .ts,.tsx ."
+    "lint": "eslint --ext .ts,.tsx,.vue ."
   },
   "keywords": [],
   "author": {
-    "name": "LawTotem",
+    "name": "LawTotem#8511",
     "email": "lawtotem8511@gmail.com"
   },
-  "license": "MIT",
+  "license": "LGPL",
   "devDependencies": {
     "@electron-forge/cli": "^7.1.0",
     "@electron-forge/maker-deb": "^7.1.0",
@@ -28,18 +28,27 @@
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
     "@vercel/webpack-asset-relocator-loader": "1.7.3",
+    "@vue/compiler-sfc": "^3.3.9",
+    "@vueform/multiselect": "^2.6.7",
+    "copy-webpack-plugin": "^12.0.2",
     "css-loader": "^6.0.0",
     "electron": "27.1.2",
+    "electron-prebuilt-compile": "^8.2.0",
     "eslint": "^8.0.1",
     "eslint-plugin-import": "^2.25.0",
     "fork-ts-checker-webpack-plugin": "^7.2.13",
+    "node-fetch": "^3.3.2",
     "node-loader": "^2.0.0",
+    "pegjs": "^0.10.0",
     "style-loader": "^3.0.0",
     "ts-loader": "^9.2.2",
     "ts-node": "^10.0.0",
-    "typescript": "~4.5.4"
+    "typescript": "~4.5.4",
+    "vue-loader": "^17.3.1"
   },
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
+    "electron-squirrel-startup": "^1.0.0",
+    "vue": "^3.3.9",
+    "vue-i18n": "^9.7.1"
   }
 }

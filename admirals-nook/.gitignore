@@ -97,3 +97,6 @@ yarn.lock
 
 # Node Modules
 node_modules
+
+# Example captures
+examples

@@ -1,0 +1,2656 @@
+{
+    "tags": [
+        "Dexterity",
+        "Intelligence",
+        "Strength",
+        "Attributes",
+        "Cold Resistance",
+        "Fire Resistance",
+        "Lightning Resistance",
+        "Elemental Resistance"
+    ],
+
+    "mods": [
+        {
+            "name": "+# to maximum Life",
+            "tags": {},
+            "rule": "start = value:pminteger ' to maximum Life' { return value; }\n"
+        },
+        {
+            "name": "+#% to Cold Resistance",
+            "tags": {"Cold Resistance" : 1.0, "Elemental Resistance" : 1.0},
+            "rule": "start = value:pminteger '% to Cold Resistance' { return value; }\n"
+        },
+        {
+            "name": "+#% to Fire Resistance",
+            "tags": {"Fire Resistance" : 1.0, "Elemental Resistance" : 1.0},
+            "rule": "start = value:pminteger '% to Fire Resistance' { return value; }\n"
+        },
+        {
+            "name": "+#% to Lightning Resistance",
+            "tags": {"Lightning Resistance" : 1.0, "Elemental Resistance" : 1.0},
+            "rule": "start = value:pminteger '% to Lightning Resistance' { return value; }\n"
+        },
+        {
+            "name": "+# to maximum Mana",
+            "tags": {},
+            "rule": "start = value:pminteger ' to maximum Mana' { return value; }\n"
+        },
+        {
+            "name": "+# to Strength",
+            "tags": {"Attributes": 1.0, "Strength": 1.0},
+            "rule": "start = value:pminteger ' to Strength' { return value; }\n"
+        },
+        {
+            "name": "+# to Dexterity",
+            "tags": {"Attributes": 1.0, "Dexterity": 1.0},
+            "rule": "start = value:pminteger ' to Dexterity' { return value; }\n"
+        },
+        {
+            "name": "+# to Intelligence",
+            "tags": {"Attributes": 1.0, "Intelligence": 1.0},
+            "rule": "start = value:pminteger ' to Intelligence' { return value; }\n"
+        },
+        {
+            "name": "+# to maximum Energy Shield",
+            "tags": {},
+            "rule": "start = value:pminteger ' to maximum Energy Shield' { return value; }\n"
+        },
+        {
+            "name": "+#% to all Elemental Resistances",
+            "tags": {"Cold Resistance": 1.0, "Fire Resistance": 1.0, "Lightning Resistance": 1.0, "Elemental Resistance": 3.0},
+            "rule": "start = value:pminteger '% to all Elemental Resistances' { return value; }\n"
+        },
+        {
+            "name": "Regenerate #% of Life per second",
+            "tags": {},
+            "rule": "start = 'Regenerate ' value:float '% of Life per second' { return value; }\n"
+        },
+        {
+            "name": "Regenerate #% of Life per second while moving",
+            "tags": {},
+            "rule": "start = 'Regenerate ' value:float '% of Life per second while moving' { return value; }\n"
+        },
+        {
+            "name": "Regenerate # Life per second",
+            "tags": {},
+            "rule": "start = 'Regenerate ' value:float ' Life per second' { return value; }\n"
+        },
+        {
+            "name": "Regenerate # Energy Shield per second",
+            "tags": {},
+            "rule": "start = 'Regenerate ' value:float ' Energy Shield per second' { return value; }\n"
+        },
+        {
+            "name": "Regenerate # Mana per second",
+            "tags": {},
+            "rule": "start = 'Regenerate ' value:float ' Mana per second' { return value; }\n"
+        },
+        {
+            "name": "#% increased Reservation Efficiency of Skills",
+            "tags": {},
+            "rule": "start = value:pcntincred ' Reservation Efficiency of Skills' { return value; }\n"
+        },
+        {
+            "name": "#% increased Rarity of Items found",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Rarity of Items found' { return value; }\n"
+        },
+        {
+            "name": "#% increased Rarity of Items found from Slain Unique Enemies",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Rarity of Items found from Slain Unique Enemies' { return value; }\n"
+        },
+        {
+            "name": "#% increased Stun and Block Recovery",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Stun and Block Recovery' { return value; }\n"
+        },
+        {
+            "name": "# to # Added Physical Damage with Bow Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Physical Damage with Bow Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Fire Damage with Bow Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Fire Damage with Bow Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Cold Damage with Bow Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Cold Damage with Bow Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Lightning Damage with Bow Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Lightning Damage with Bow Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Chaos Damage with Bow Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Chaos Damage with Bow Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Physical Damage with Axe Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Physical Damage with Axe Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Fire Damage with Axe Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Fire Damage with Axe Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Cold Damage with Axe Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Cold Damage with Axe Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Lightning Damage with Axe Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Lightning Damage with Axe Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Chaos Damage with Axe Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Chaos Damage with Axe Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Physical Damage with Sword Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Physical Damage with Sword Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Fire Damage with Sword Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Fire Damage with Sword Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Cold Damage with Sword Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Cold Damage with Sword Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Lightning Damage with Sword Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Lightning Damage with Sword Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Chaos Damage with Sword Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Chaos Damage with Sword Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Physical Damage with Dagger Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Physical Damage with Dagger Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Fire Damage with Dagger Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Fire Damage with Dagger Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Cold Damage with Dagger Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Cold with Dagger Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Lightning Damage with Dagger Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Lightning Damage with Dagger Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Chaos Damage with Dagger Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Chaos Damage with Dagger Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Physical Damage with Wand Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Physical Damage with Wand Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Fire Damage with Wand Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Fire Damage with Wand Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Cold Damage with Wand Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Cold Damage with Wand Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Lightning Damage with Wand Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Lightning Damage with Wand Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Chaos Damage with Wand Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Chaos Damage with Wand Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Physical Damage with Claw Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Physical Damage with Claw Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Fire Damage with Claw Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Fire Damage with Claw Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Cold Damage with Claw Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Cold Damage with Claw Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Lightning Damage with Claw Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Lightning Damage with Claw Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Chaos Damage with Claw Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Chaos Damage with Claw Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Physical Damage with Mace or Sceptre Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Physical Damage with Mace or Sceptre Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Fire Damage with Mace or Sceptre Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Fire Damage with Mace or Sceptre Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Cold Damage with Mace or Sceptre Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Cold Damage with Mace or Sceptre Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Lightning Damage with Mace or Sceptre Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Lightning Damage with Mace or Sceptre Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Chaos Damage with Mace or Sceptre Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Chaos Damage with Mace or Sceptre Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Physical Damage with Staff Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Physical Damage with Staff Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Fire Damage with Staff Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Fire Damage with Staff Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Cold Damage with Staff Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Cold Damage with Staff Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Lightning Damage with Staff Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Lightning Damage with Staff Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Chaos Damage with Staff Attacks",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Chaos Damage with Staff Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "#% increased Physical Damage",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Physical Damage' { return value; }\n"
+        },
+        {
+            "name": "Adds # to # Physical Damage to Attacks",
+            "tags": {},
+            "rule": "start = 'Adds ' valuea:integer ' to ' valueb:integer ' Physical Damage to Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "Adds # to # Physical Damage to Spells",
+            "tags": {},
+            "rule": "start = 'Adds ' valuea:integer ' to ' valueb:integer ' Physical Damage to Spells' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "#% increased Mana Regeneration Rate",
+            "tags": {},
+            "rule": "start = value:pcntincred ' Mana Regeneration Rate' { return value; }\n"
+        },
+        {
+            "name": "#% increased Mana Regeneration Rate while moving",
+            "tags": {},
+            "rule": "start = value:pcntincred ' Mana Regeneration Rate while moving' { return value; }\n"
+        },
+        {
+            "name": "#% increased Mana Regeneration Rate while stationary",
+            "tags": {},
+            "rule": "start = value:pcntincred' Mana Regeneration Rate while stationary' { return value; }\n"
+        },
+        {
+            "name": "#% increased Mana Resevation Efficiency of Skills",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Mana Reservation Efficiency of Skills' { return value; }\n"
+        },
+        {
+            "name": "#% increased Attack Speed",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Attack Speed' { return value; }\n"
+        },
+        {
+            "name": "#% increased Attack Speed if you've dealt a Critical Strike Recently",
+            "tags": {},
+            "rule": "start = value:pcntincdec \" Attack Speed if you've dealt a Critical Strike Recently\" { return value; }\n"
+        },
+        {
+            "name": "#% increased Attack Speed if you've Killed Recently",
+            "tags": {},
+            "rule": "start = value:pcntincdec \" Attack Speed if you've Killed Recently\" { return value; }\n"
+        },
+        {
+            "name": "+# to Accuracy Rating",
+            "tags": {},
+            "rule": "start = value:pminteger ' to Accuracy Rating' { return value; }\n"
+        },
+        {
+            "name": "+#% to Global Critical Strike Multiplier",
+            "tags": {},
+            "rule": "start = value:pminteger '% to Global Critical Strike Multiplier' { return value; }\n"
+        },
+        {
+            "name": "+#% to Melee Critical Strike Multiplier",
+            "tags": {},
+            "rule": "start = value:pminteger '% to Melee Critical Strike Multiplier' { return value; }\n"
+        },
+        {
+            "name": "+#% to Critical Strike Multiplier if you've Killed Recently",
+            "tags": {},
+            "rule": "start = value:pminteger \"% to Critical Strike Multiplier if you've Killed Recently\" { return value; }\n"
+        },
+        {
+            "name": "+#% to Critical Strike Multiplier while Dual Wielding",
+            "tags": {},
+            "rule": "start = value:pminteger '% to Critical Strike Multiplier while Dual Wielding' { return value; }\n"
+        },
+        {
+            "name": "+#% to Critical Strike Multiplier with Two Handed Melee Weapons",
+            "tags": {},
+            "rule": "start = value:pminteger '% to Critical Strike Multiplier with Two Handed Melee Weapons' { return value; }\n"
+        },
+        {
+            "name": "+#% to Critical Strike Multiplier with One Handed Melee Weapons",
+            "tags": {},
+            "rule": "start = value:pminteger '% to Critical Strike Multiplier with One Handed Melee Weapons' { return value; }\n"
+        },
+        {
+            "name": "+#% to Critical Strike Multiplier with Cold Skills",
+            "tags": {},
+            "rule": "start = value:pminteger '% to Critical Strike Multiplier with Cold Skills' { return value; }\n"
+        },
+        {
+            "name": "+#% to Critical Strike Multiplier with Fire Skills",
+            "tags": {},
+            "rule": "start = value:pminteger '% to Critical Strike Multiplier with Fire Skills' { return value; }\n"
+        },
+        {
+            "name": "+#% to Critical Strike Multiplier with Lightning Skills",
+            "tags": {},
+            "rule": "start = value:pminteger '% to Critical Strike Multiplier with Lightning Skills' { return value; }\n"
+        },
+        {
+            "name": "+#% to Critical Strike Multiplier with Elemental Skills",
+            "tags": {},
+            "rule": "start = value:pminteger '% to Critical Strike Multiplier with Elemental Skills' { return value; }\n"
+        },
+        {
+            "name": "+#% to Critical Strike Multiplier for Spell Damage",
+            "tags": {},
+            "rule": "start = value:pminteger '% to Critical Strike Multiplier for Spell Damage' { return value; }\n"
+        },
+        {
+            "name": "+#% to Chaos Resistance",
+            "tags": {},
+            "rule": "start = value:pminteger '% to Chaos Resistance' { return value; }\n"
+        },
+        {
+            "name": "#% increased maximum Life",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' maximum Life' { return value; }\n"
+        },
+        {
+            "name": "#% increased Movement Speed",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Movement Speed' { return value; }\n"
+        },
+        {
+            "name": "#% increased Movement Speed if you haven't taken Damage Recently",
+            "tags": {},
+            "rule": "start = value:pcntincdec \" Movement Speed if you haven't taken Damage Recently\" { return value; }\n"
+        },
+        {
+            "name": "#% increased Movement Speed if you've Killed Recently",
+            "tags": {},
+            "rule": "start = value:pcntincdec \" Movement Speed if you've Killed Recently\" { return value; }\n"
+        },
+        {
+            "name": "Adds # to # Physical Damage",
+            "tags": {},
+            "rule": "start = 'Adds ' valuea:integer ' to ' valueb:integer ' Physical Damage' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "Damaging Ailments deal damage #% faster",
+            "tags": {},
+            "rule": "start = 'Damaging Ailments deal damage ' value:integer '% faster' { return value; }\n"
+        },
+        {
+            "name": "#% increased Cast Speed",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Cast Speed' { return value; }\n"
+        },
+        {
+            "name": "#% increased Cast Speed if you've dealt a Critical Strike Recently",
+            "tags": {},
+            "rule": "start = value:pcntincdec \" Cast Speed if you've dealt a Critical Strike Recently\" { return value; }\n"
+        },
+        {
+            "name": "#% increased Cast Speed if a Minion has been Killed Recently",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Cast Speed if a Minion has been Killed Recently' { return value; }\n"
+        },
+        {
+            "name": "#% increased Cast Speed while Dual Wielding",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Cast Speed while Dual Wielding' { return value; }\n"
+        },
+        {
+            "name": "#% increased Cast Speed while holding a Shield",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Cast Speed while holding a Shield' { return value; }\n"
+        },
+        {
+            "name": "#% increased Cast Speed while wielding a Staff",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Cast Speed while wielding a Staff' { return value; }\n"
+        },
+        {
+            "name": "#% increased Cast Speed with Cold Skills",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Cast Speed with Cold Skills' { return value; }\n"
+        },
+        {
+            "name": "#% increased Cast Speed with Fire Skills",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Cast Speed with Fire Skills' { return value; }\n"
+        },
+        {
+            "name": "#% increased Cast Speed with Lightning Skills",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Cast Speed with Lightning Skills' { return value; }\n"
+        },
+        {
+            "name": "+# to all Attributes",
+            "tags": {"Dexterity": 1.0, "Strength": 1.0, "Intelligence": 1.0, "Attributes": 3.0},
+            "rule": "start = value:pminteger ' to all Attributes' { return value; }\n"
+        },
+        {
+            "name": "#% increased Evasion Rating",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Evasion Rating' { return value; }\n"
+        },
+        {
+            "name": "#% increased Evasion Rating while moving",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Evasion Rating while moving' { return value; }\n"
+        },
+        {
+            "name": "#% increased Spell Damage",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Spell Damage' { return value; }\n"
+        },
+        {
+            "name": "#% increased Spell Damage while Dual Wielding",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Spell Damage while Dual Wielding' { return value; }\n"
+        },
+        {
+            "name": "#% increased Spell Damage while holding a Shield",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Spell Damage while holding a Shield' { return value; }\n"
+        },
+        {
+            "name": "#% increased Spell Damage while wielding a Staff",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Spell Damage while wielding a Staff' { return value; }\n"
+        },
+        {
+            "name": "Adds # to # Lightning Damage to Attacks",
+            "tags": {},
+            "rule": "start = 'Adds ' valuea:integer ' to ' valueb:integer ' Lightning Damage to Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "Adds # to # Fire Damage to Attacks",
+            "tags": {},
+            "rule": "start = 'Adds ' valuea:integer ' to ' valueb:integer ' Fire Damage to Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "Adds # to # Cold Damage to Attacks",
+            "tags": {},
+            "rule": "start = 'Adds ' valuea:integer ' to ' valueb:integer ' Cold Damage to Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "+# to Evasion Rating",
+            "tags": {},
+            "rule": "start = value:pminteger ' to Evasion Rating' { return value; }\n"
+        },
+        {
+            "name": "#% increased maximum Energy Shield",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' maximum Energy Shield' { return value; }\n"
+        },
+        {
+            "name": "#% increased Global Critical Strike Chance",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Global Critical Strike Chance' { return value; }\n"
+        },
+        {
+            "name": "#% increased Global Critical Strike Multiplier",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Global Critical Strike Multiplier' { return value; }\n"
+        },
+        {
+            "name": "#% increased Fire Damage",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Fire Damage' { return value; }\n"
+        },
+        {
+            "name": "#% increased Totem Damage",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Totem Damage' { return value; }\n"
+        },
+        {
+            "name": "#% increased Totem Life",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Fire Life' { return value; }\n"
+        },
+        {
+            "name": "#% increased Trap Damage",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Trap Damage' { return value; }\n"
+        },
+        {
+            "name": "#% increased Trap Throwing Speed",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Trap Throwing Speed' { return value; }\n"
+        },
+        {
+            "name": "#% increased Effect of Lightning Ailments",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Effect of Lightning Ailments' { return value; }\n"
+        },
+        {
+            "name": "#% increased Effect of Cold Ailments",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Effect of Cold Ailments' { return value; }\n"
+        },
+        {
+            "name": "#% increased Effect of your Curses",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Effect of your Curses' { return value; }\n"
+        },
+        {
+            "name": "#% increased Effect of Non-Damaging Ailments",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Effect of Non-Damaging Ailments' { return value; }\n"
+        },
+        {
+            "name": "#% increased Attributes",
+            "tags": {},
+            "rule": "start = value:pcntincred ' Attributes' { return value; }\n"
+        },
+        {
+            "name": "#% increased Intelligence",
+            "tags": {},
+            "rule": "start = value:pcntincred ' Intelligence' { return value; }\n"
+        },
+        {
+            "name": "#% increased Strength",
+            "tags": {},
+            "rule": "start = value:pcntincred ' Strength' { return value; }\n"
+        },
+        {
+            "name": "#% increased Dexterity",
+            "tags": {},
+            "rule": "start = value:pcntincred ' Dexterity' { return value; }\n"
+        },
+        {
+            "name": "#% increased Global Defences",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Global Defences' { return value; }\n"
+        },
+        {
+            "name": "#% increased Armour",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Armour' { return value; }\n"
+        },
+        {
+            "name": "#% increased Armour if you haven't Killed Recently",
+            "tags": {},
+            "rule": "start = value:pcntincdec \" Armour if you haven't Killed Recently\" { return value; }\n"
+        },
+        {
+            "name": "#% increased Energy Shield",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Energy Shield' { return value; }\n"
+        },
+        {
+            "name": "#% increased Ward",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Ward' { return value; }\n"
+        },
+        {
+            "name": "#% increased Light Radius",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Light Radius' { return value; }\n"
+        },
+        {
+            "name": "#% increased Elemental Damage with Attack Skills",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Elemental Damage with Attack Skills' { return value; }\n"
+        },
+        {
+            "name": "#% increased Elemental Damage",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Elemental Damage' { return value; }\n"
+        },
+        {
+            "name": "+# to Ward",
+            "tags": {},
+            "rule": "start = value:pminteger ' to Ward' { return value; }\n"
+        },
+        {
+            "name": "+# to Armour",
+            "tags": {},
+            "rule": "start = value:pminteger ' to Armour' { return value; }\n"
+        },
+        {
+            "name": "+# to Armour and Evasion Rating",
+            "tags": {},
+            "rule": "start = value:pminteger ' to Armour and Evasion Rating' { return value; }\n"
+        },
+        {
+            "name": "#% increased Armour and Energy Shield",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Armour and Energy Shield' { return value; }\n"
+        },
+        {
+            "name": "#% increased Armour, Evasion and Energy Shield",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Armour, Evasion and Energy Shield' { return value; }\n"
+        },
+        {
+            "name": "#% increased Cold Damage",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Cold Damage' { return value; }\n"
+        },
+        {
+            "name": "#% increased Armour and Evasion",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Armour and Evasion' { return value; }\n"
+        },
+        {
+            "name": "#% increased Lightning Damage",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Lightning Damage' { return value; }\n"
+        },
+        {
+            "name": "#% increased Critical Strike Chance",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Critical Strike Chance' { return value; }\n"
+        },
+        {
+            "name": "#% increased Melee Critical Strike Chance",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Melee Critical Strike Chance' { return value; }\n"
+        },
+        {
+            "name": "#% increased Global Critical Strike Chance",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Global Critical Strike Chance' { return value; }\n"
+        },
+        {
+            "name": "#% increased Critical Strike Chance if you haven't dealt a Critical Strike Recently",
+            "tags": {},
+            "rule": "start = value:pcntincdec \" Critical Strike Chance if you haven't dealt a Critical Strike Recently\" { return value; }\n"
+        },
+        {
+            "name": "#% increased Critical Strike Multiplier if you've Killed Recently",
+            "tags": {},
+            "rule": "start = value:pcntincdec \" Critical Strike Multiplier if you've Killed Recently\" { return value; }\n"
+        },
+        {
+            "name": "Gain # Life per Enemy Killed",
+            "tags": {},
+            "rule": "start = 'Gain ' value:integer ' Life per Enemy Killed' { return value; }\n"
+        },
+        {
+            "name": "Gain # Mana per Enemy Killed",
+            "tags": {},
+            "rule": "start = 'Gain ' value:integer ' Mana per Enemy Killed' { return value; }\n"
+        },
+        {
+            "name": "Adds # to # Cold Damage",
+            "tags": {},
+            "rule": "start = 'Adds ' valuea:integer ' to ' valueb:integer ' Cold Damage' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "Adds # to # Lightning Damage",
+            "tags": {},
+            "rule": "start = 'Adds ' valuea:integer ' to ' valueb:integer ' Lightning Damage' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "#% increased Evasion and Energy Shield",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Evasion and Energy Shield' { return value; }\n"
+        },
+        {
+            "name": "+#% increased maximum Mana",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' maximum Mana' { return value; }\n"
+        },
+        {
+            "name": "#% increased Stun Duration on Enemies",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Stun Duration on Enemies' { return value; }\n"
+        },
+        {
+            "name": "#% of Spell Damage Leeched as Energy Shield",
+            "tags": {},
+            "rule": "start = value:float '% of Spell Damage Leeched as Energy Shield' { return value; }\n"
+        },
+        {
+            "name": "#% of Physical Attack Damage Leeched as Life",
+            "tags": {},
+            "rule": "start = value:float '% of Physical Attack Damage Leeched as Life' { return value; }\n"
+        },
+        {
+            "name": "#% of Attack Damage Leeched as Life",
+            "tags": {},
+            "rule": "start = value:float '% of Attack Damage Leeched as Life' { return value; }\n"
+        },
+        {
+            "name": "#% of Physical Damage Leeched as Life",
+            "tags": {},
+            "rule": "start = value:float '% of Physical Damage Leeched as Life' { return value; }\n"
+        },
+        {
+            "name": "#% of Elemental Damage Leeched as Life",
+            "tags": {},
+            "rule": "start = value:float '% of Elemental Attack Damage Leeched as Life' { return value; }\n"
+        },
+        {
+            "name": "#% of Lightning Damage Leeched as Life",
+            "tags": {},
+            "rule": "start = value:float '% of Lightning Damage Leeched as Life' { return value; }\n"
+        },
+        {
+            "name": "#% of Cold Damage Leeched as Life",
+            "tags": {},
+            "rule": "start = value:float '% of Cold Damage Leeched as Life' { return value; }\n"
+        },
+        {
+            "name": "#% of Fire Attack Damage Leeched as Life",
+            "tags": {},
+            "rule": "start = value:float '% of Fire Damage Leeched as Life' { return value; }\n"
+        },
+        {
+            "name": "#% of Chaos Damage Leeched as Life",
+            "tags": {},
+            "rule": "start = value:float '% of Chaos Damage Leeched as Life' { return value; }\n"
+        },
+        {
+            "name": "#% of Physical Attack Damage Leeched as Mana",
+            "tags": {},
+            "rule": "start = value:float '% of Physical Attack Damage Leeched as Mana' { return value; }\n"
+        },
+        {
+            "name": "#% of Physical Damage Leeched as Mana",
+            "tags": {},
+            "rule": "start = value:float '% of Physical Damage Leeched as Mana' { return value; }\n"
+        },
+        {
+            "name": "#% of Elemental Damage Leeched as Mana",
+            "tags": {},
+            "rule": "start = value:float '% of Elemental Attack Damage Leeched as Mana' { return value; }\n"
+        },
+        {
+            "name": "#% of Lightning Damage Leeched as Mana",
+            "tags": {},
+            "rule": "start = value:float '% of Lightning Damage Leeched as Mana' { return value; }\n"
+        },
+        {
+            "name": "#% of Cold Damage Leeched as Mana",
+            "tags": {},
+            "rule": "start = value:float '% of Cold Damage Leeched as Mana' { return value; }\n"
+        },
+        {
+            "name": "#% of Fire Attack Damage Leeched as Mana",
+            "tags": {},
+            "rule": "start = value:float '% of Fire Damage Leeched as Mana' { return value; }\n"
+        },
+        {
+            "name": "#% of Chaos Damage Leeched as Mana",
+            "tags": {},
+            "rule": "start = value:float '% of Chaos Damage Leeched as Mana' { return value; }\n"
+        },
+        {
+            "name": "#% increased Global Physical Damage",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Global Physical Damage' { return value; }\n"
+        },
+        {
+            "name": "Adds # to # Fire Damage",
+            "tags": {},
+            "rule": "start = 'Adds ' valuea:integer ' to ' valueb:integer ' Fire Damage' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "#% increased Global Accuracy Rating",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Global Accuracy Rating' { return value; }\n"
+        },
+        {
+            "name": "#% increased Critical Strike Chance with Cold Skills",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Critical Strike Chance with Cold Skills' { return value; }\n"
+        },
+        {
+            "name": "#% increased Critical Strike Chance with Fire Skills",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Critical Strike Chance with Fire Skills' { return value; }\n"
+        },
+        {
+            "name": "#% increased Critical Strike Chance with Lightning Skills",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Critical Strike Chance with Lightning Skills' { return value; }\n"
+        },
+        {
+            "name": "#% increased Critical Strike Chance with Elemental Skills",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Critical Strike Chance with Elemental Skills' { return value; }\n"
+        },
+        {
+            "name": "#% increased Critical Strike Chance with One Handed Melee Weapons",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Critical Strike Chance with One Handed Melee Weapons' { return value; }\n"
+        },
+        {
+            "name": "#% increased Critical Strike Multiplier with One Handed Melee Weapons",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Critical Strike Multiplier with One Handed Melee Weapons' { return value; }\n"
+        },
+        {
+            "name": "#% increased Critical Strike Chance with Two Handed Melee Weapons",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Critical Strike Chance with Two Handed Melee Weapons' { return value; }\n"
+        },
+        {
+            "name": "#% increased Critical Strike Multiplier with Two Handed Melee Weapons",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Critical Strike Multiplier with Two Handed Melee Weapons' { return value; }\n"
+        },
+        {
+            "name": "#% increased Projectile Speed",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Projectile Speed' { return value; }\n"
+        },
+        {
+            "name": "Reflects # Physical Damage to Melee Attackers",
+            "tags": {},
+            "rule": "start = 'Reflects ' value:integer ' Physical Damage to Melee Attackers' { return value; }\n"
+        },
+        {
+            "name": "+#% chance to Suppress Spell Damage",
+            "tags": {},
+            "rule": "start = value:pminteger '% chance to Suppress Spell Damage' { return value; }\n"
+        },
+        {
+            "name": "#% chance to Impale Enemies on Hit with Attacks",
+            "tags": {},
+            "rule": "start = value:integer '% chance to Impale Enemies on Hit with Attacks' { return value; }\n"
+        },
+        {
+            "name": "#% chance to Intimidate Enemies for 4 seconds on Hit",
+            "tags": {},
+            "rule": "start = value:integer '% chance to Intimidate Enemies for 4 seconds on Hit' { return value; }\n"
+        },
+        {
+            "name": "#% chance to Knock Enemies Back on hit",
+            "tags": {},
+            "rule": "start = value:integer '% chance to Knock Enemies Back on hit' { return value; }\n"
+        },
+        {
+            "name": "#% chance to Hinder Enemies on Hit with Spells",
+            "tags": {},
+            "rule": "start = value:integer '% chance to Hinder Enemies on Hit with Spells' { return value; }\n"
+        },
+        {
+            "name": "Gain # Life per Enemy Hit with Attacks",
+            "tags": {},
+            "rule": "start = 'Gain ' value:integer ' Life per Enemy Hit with Attacks' { return value; }\n"
+        },
+        {
+            "name": "Gain # Mana per Enemy Hit with Attacks",
+            "tags": {},
+            "rule": "start = 'Gain ' value:integer ' Mana per Enemy Hit with Attacks' { return value; }\n"
+        },
+        {
+            "name": "Gain # Energy Shield per Enemy Hit with Attacks",
+            "tags": {},
+            "rule": "start = 'Gain ' value:integer ' Energy Shield per Enemy Hit with Attacks' { return value; }\n"
+        },
+        {
+            "name": "Grants # Life per Enemy Hit",
+            "tags": {},
+            "rule": "start = 'Grants ' value:integer ' Life per Enemy Hit' { return value; }\n"
+        },
+        {
+            "name": "Grants # Mana per Enemy Hit",
+            "tags": {},
+            "rule": "start = 'Grants ' value:integer ' Mana per Enemy Hit' { return value; }\n"
+        },
+        {
+            "name": "Grants # Energy Shield per Enemy Hit",
+            "tags": {},
+            "rule": "start = 'Grants ' value:integer ' Energy Shield per Enemy Hit' { return value; }\n"
+        },
+        {
+            "name": "#% increased Critical Strike Chance for Spells",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Critical Strike Chance for Spells' { return value; }\n"
+        },
+        {
+            "name": "#% increased Quantity of Items found",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Quantity of Items found' { return value; }\n"
+        },
+        {
+            "name": "#% increased Projectile Damage",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Projectile Damage' { return value; }\n"
+        },
+        {
+            "name": "#% increased Projectile Attack Damage",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Projectile Attack Damage' { return value; }\n"
+        },
+        {
+            "name": "#% increased Area Damage",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Area Damage' { return value; }\n"
+        },
+        {
+            "name": "#% increased Damage",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Damage' { return value; }\n"
+        },
+        {
+            "name": "#% increased Damage with Hits and Ailments against Abyssal Monsters",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Damage with Hits and Ailments against Abyssal Monsters' { return value; }\n"
+        },
+        {
+            "name": "#% increased Damage if you've Killed Recently",
+            "tags": {},
+            "rule": "start = value:pcntincdec \" Damage if you've Killed Recently\" { return value; }\n"
+        },
+        {
+            "name": "#% increased Damage while Leeching Life",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Damage while Leeching Life' { return value; }\n"
+        },
+        {
+            "name": "#% increased Damage while Leeching",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Damage while Leeching' { return value; }\n"
+        },
+        {
+            "name": "#% increased Damage with Bows",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Damage with Bows' { return value; }\n"
+        },
+        {
+            "name": "#% increased Damage with Bow Skills",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Damage with Bow Skills' { return value; }\n"
+        },
+        {
+            "name": "#% increased Damage with Wands",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Damage with Wands' { return value; }\n"
+        },
+        {
+            "name": "#% increased Damage with Axes",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Damage with Axes' { return value; }\n"
+        },
+        {
+            "name": "#% increased Mine Damage",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Mine Damage' { return value; }\n"
+        },
+        {
+            "name": "#% increased Mine Throwing Speed",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Mine Throwing Speed' { return value; }\n"
+        },
+        {
+            "name": "Minions Regenerate # Life per second",
+            "tags": {},
+            "rule": "start = 'Minions Regenerate ' value:integer ' Life per second' { return value; }\n"
+        },
+        {
+            "name": "Minions Regenerate #% of Life per second",
+            "tags": {},
+            "rule": "start = 'Minions Regenerate ' value:float '% of Life per second' { return value; }\n"
+        },
+        {
+            "name": "Minions deal #% increased Damage",
+            "tags": {},
+            "rule": "start = 'Minions deal ' value:pcntincdec ' Damage' { return value; }\n"
+        },
+        {
+            "name": "Minions deal #% increased Damage if you've used a Minion Skill Recently",
+            "tags": {},
+            "rule": "start = 'Minions deal ' value:pcntincdec \" Damage if you've used a Minion Skill Recently\" { return value; }\n"
+        },
+        {
+            "name": "Minions deal #% increased Damage with Hits and Ailments against Abyssal Monsters",
+            "tags": {},
+            "rule": "start = 'Minions deal ' value:pcntincdec ' Damage with Hits and Ailments against Abyssal Monsters' { return value; }\n"
+        },
+        {
+            "name": "#% reduced Enemy Stun Threshold",
+            "tags": {},
+            "rule": "start = value:npcntincred ' Enemy Stun Threshold' { return value; }\n"
+        },
+        {
+            "name": "#% reduced Flask Charges used",
+            "tags": {},
+            "rule": "start = value:npcntincred ' Flask Charges used' { return value; }\n"
+        },
+        {
+            "name": "Minions have #% increased maximum Life",
+            "tags": {},
+            "rule": "start = 'Minions have ' value:pcntincdec ' maximum Life' { return value; }\n"
+        },
+        {
+            "name": "Minions have #% increased Attack and Cast Speed",
+            "tags": {},
+            "rule": "start = 'Minions have ' value:pcntincdec ' Attack and Cast Speed' { return value; }\n"
+        },
+        {
+            "name": "Minions have #% increased Attack and Cast Speed if you or your Minions have Killed Recently",
+            "tags": {},
+            "rule": "start = 'Minions have ' value:pcntincdec ' Attack and Cast Speed if you or your Minions have Killed Recently' { return value; }\n"
+        },
+        {
+            "name": "Minions have #% increased Attack Speed",
+            "tags": {},
+            "rule": "start = 'Minions have ' value:pcntincdec ' Attack Speed' { return value; }\n"
+        },
+        {
+            "name": "Minions have #% increased Cast Speed",
+            "tags": {},
+            "rule": "start = 'Minions have ' value:pcntincdec ' Cast Speed' { return value; }\n"
+        },
+        {
+            "name": "Minions have #% increased Movement Speed",
+            "tags": {},
+            "rule": "start = 'Minions have ' value:pcntincdec ' Movement Speed' { return value; }\n"
+        },
+        {
+            "name": "Minions have +#% to all Elemental Resistances",
+            "tags": {},
+            "rule": "start = 'Minions have ' value:pminteger '% to all Elemental Resistances' { return value; }\n"
+        },
+        {
+            "name": "Minions have +#% to Chaos Resistance",
+            "tags": {},
+            "rule": "start = 'Minions have ' value:pminteger '% to Chaos Resistance' { return value; }\n"
+        },
+        {
+            "name": "Minions have +# to Accuracy",
+            "tags": {},
+            "rule": "start = 'Minions have ' value:pminteger ' to Accuracy' { return value; }\n"
+        },
+        {
+            "name": "Minions Leech #% of Damage as Life",
+            "tags": {},
+            "rule": "start = 'Minions Leech ' value:float '% of Damage as Life' { return value; }\n"
+        },
+        {
+            "name": "Totems gain +#% to all Elemental Resistances",
+            "tags": {},
+            "rule": "start = 'Totems gain ' value:pminteger '% to all Elemental Resistances' { return value; }\n"
+        },
+        {
+            "name": "#% increased Minion Accuracy Rating",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Minion Accuracy Rating' { return value; }\n"
+        },
+        {
+            "name": "+# to Level of Socketed Gems",
+            "tags": {},
+            "rule": "start = value:pminteger ' to Level of Socketed Gems' { return value; }\n"
+        },
+        {
+            "name": "+# to Level of Socketed Support Gems",
+            "tags": {},
+            "rule": "start = value:pminteger ' to Level of Socketed Support Gems' { return value; }\n"
+        },
+        {
+            "name": "+# to Level of Socketed Spell Gems",
+            "tags": {},
+            "rule": "start = value:pminteger ' to Level of Socketed Spell Gems' { return value; }\n"
+        },
+        {
+            "name": "+# to Level of Socketed Aura Gems",
+            "tags": {},
+            "rule": "start = value:pminteger ' to Level of Socketed Aura Gems' { return value; }\n"
+        },
+        {
+            "name": "+# to Level of all Minion Skill Gems",
+            "tags": {},
+            "rule": "start = value:pminteger ' to Level of all Minion Skill Gems' { return value; }\n"
+        },
+        {
+            "name": "+# to Level of all Chaos Skill Gems",
+            "tags": {},
+            "rule": "start = value:pminteger ' to Level of all Chaos Skill Gems' { return value; }\n"
+        },
+        {
+            "name": "+# to Level of all Chaos Spell Skill Gems",
+            "tags": {},
+            "rule": "start = value:pminteger ' to Level of all Chaos Spell Skill Gems' { return value; }\n"
+        },
+        {
+            "name": "+# to Level of all Cold Skill Gems",
+            "tags": {},
+            "rule": "start = value:pminteger ' to Level of all Cold Skill Gems' { return value; }\n"
+        },
+        {
+            "name": "+# to Level of all Cold Spell Skill Gems",
+            "tags": {},
+            "rule": "start = value:pminteger ' to Level of all Cold Spell Skill Gems' { return value; }\n"
+        },
+        {
+            "name": "+# to Level of all Fire Skill Gems",
+            "tags": {},
+            "rule": "start = value:pminteger ' to Level of all Fire Skill Gems' { return value; }\n"
+        },
+        {
+            "name": "+# to Level of all Fire Spell Skill Gems",
+            "tags": {},
+            "rule": "start = value:pminteger ' to Level of all Fire Spell Skill Gems' { return value; }\n"
+        },
+        {
+            "name": "+# to Level of all Lightning Skill Gems",
+            "tags": {},
+            "rule": "start = value:pminteger ' to Level of all Lightning Skill Gems' { return value; }\n"
+        },
+        {
+            "name": "+# to Level of all Lightning Spell Skill Gems",
+            "tags": {},
+            "rule": "start = value:pminteger ' to Level of all Lightning Spell Skill Gems' { return value; }\n"
+        },
+        {
+            "name": "+# to Level of all Physical Skill Gems",
+            "tags": {},
+            "rule": "start = value:pminteger ' to Level of all Physical Skill Gems' { return value; }\n"
+        },
+        {
+            "name": "+# to Level of all Skill Gems",
+            "tags": {},
+            "rule": "start = value:pminteger ' to Level of all Skill Gems' { return value; }\n"
+        },
+        {
+            "name": "#% increased Burning Damage",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Burning Damage' { return value; }\n"
+        },
+        {
+            "name": "Minions deal # to # additional Cold Damage",
+            "tags": {},
+            "rule": "start = 'Minions deal ' valuea:integer ' to ' valueb:integer ' additional Cold Damage' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "Minions deal # to # additional Fire Damage",
+            "tags": {},
+            "rule": "start = 'Minions deal ' valuea:integer ' to ' valueb:integer ' additional Fire Damage' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "Minions deal # to # additional Lightning Damage",
+            "tags": {},
+            "rule": "start = 'Minions deal ' valuea:integer ' to ' valueb:integer ' additional Lightning Damage' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "Minions deal # to # additional Physical Damage",
+            "tags": {},
+            "rule": "start = 'Minions deal ' valuea:integer ' to ' valueb:integer ' additional Physical Damage' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "Minions deal # to # additional Chaos Damage",
+            "tags": {},
+            "rule": "start = 'Minions deal ' valuea:integer ' to ' valueb:integer ' additional Chaos Damage' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "Adds # to # Lightning Damage to Spells",
+            "tags": {},
+            "rule": "start = 'Adds ' valuea:integer ' to ' valueb:integer ' Lightning Damage to Spells' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "#% reduced Mana Cost of Skills",
+            "tags": {},
+            "rule": "start = value:npcntincred ' Mana Cost of Skills' { return value; }\n"
+        },
+        {
+            "name": "#% increased Cooldown Recovery Rate",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Cooldown Recovery Rate' { return value; }\n"
+        },
+        {
+            "name": "#% increased Damage over Time",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Damage over Time' { return value; }\n"
+        },
+        {
+            "name": "#% increased Damage over Time while Dual Wielding",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Damage over Time while Dual Wielding' { return value; }\n"
+        },
+        {
+            "name": "#% increased Damage over Time while wielding a Two Handed Weapon",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Damage over Time while wielding a Two Handed Weapon' { return value; }\n"
+        },
+        {
+            "name": "#% increased Damage over Time while holding a Shield",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Damage over Time while holding a Shield' { return value; }\n"
+        },
+        {
+            "name": "#% increased Chaos Damage over Time",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Chaos Damage over Time' { return value; }\n"
+        },
+        {
+            "name": "#% increased Cold Damage over Time Multiplier",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Cold Damage over Time Multiplier' { return value; }\n"
+        },
+        {
+            "name": "#% increased Fire Damage over Time Multiplier",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Fire Damage over Time Multiplier' { return value; }\n"
+        },
+        {
+            "name": "+#% to Fire Damage over Time Multiplier",
+            "tags": {},
+            "rule": "start = value:pminteger '% to Fire Damage over Time Multiplier' { return value; }\n"
+        },
+        {
+            "name": "+#% to Cold Damage over Time Multiplier",
+            "tags": {},
+            "rule": "start = value:pminteger '% to Cold Damage over Time Multiplier' { return value; }\n"
+        },
+        {
+            "name": "#% to Physical Damage over Time Multiplier",
+            "tags": {},
+            "rule": "start = value:pminteger '% to Physical Damage over Time Multiplier' { return value; }\n"
+        },
+        {
+            "name": "#% increased Physical Damage over Time Multiplier",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Physical Damage over Time Multiplier' { return value; }\n"
+        },
+        {
+            "name": "Adds # to # Fire Damage to Spells",
+            "tags": {},
+            "rule": "start = 'Adds ' valuea:integer ' to ' valueb:integer ' Fire Damage to Spells' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "#% increased Area of Effect",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Area of Effect' { return value; }\n"
+        },
+        {
+            "name": "#% chance to Shock",
+            "tags": {},
+            "rule": "start = value:integer '% chance to Shock' { return value; }\n"
+        },
+        {
+            "name": "#% chance to Maim on Hit",
+            "tags": {},
+            "rule": "start = value:integer '% chance to Maim on Hit' { return value; }\n"
+        },
+        {
+            "name": "#% increased Shock Duration on Enemies",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Shock Duration on Enemies' { return value; }\n"
+        },
+        {
+            "name": "+#% Chance to Block",
+            "tags": {},
+            "rule": "start = value:pminteger '% Chance to Block' { return value; }\n"
+        },
+        {
+            "name": "#% Chance to Block Spell Damage",
+            "tags": {},
+            "rule": "start = value:integer '% Chance to Block Spell Damage' { return value; }\n"
+        },
+        {
+            "name": "+#% Chance to Block Spell Damage",
+            "tags": {},
+            "rule": "start = value:pminteger '% Chance to Block Spell Damage' { return value; }\n"
+        },
+        {
+            "name": "+#% Chance to Block Spell Damage if you were Damaged by a Hit Recently",
+            "tags": {},
+            "rule": "start = value:pminteger '% Chance to Block Spell Damage if you were Damaged by a Hit Recently' { return value; }\n"
+        },
+        {
+            "name": "+#% Chance to Block Attack Damage if you were Damaged by a Hit Recently",
+            "tags": {},
+            "rule": "start = value:pminteger '% Chance to Block Attack Damage if you were Damaged by a Hit Recently' { return value; }\n"
+        },
+        {
+            "name": "#% increased Damage with Poison",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Damage with Poison' { return value; }\n"
+        },
+        {
+            "name": "Adds # to # Cold Damage to Spells",
+            "tags": {},
+            "rule": "start = 'Adds ' valuea:integer ' to ' valueb:integer ' Cold Damage to Spells' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "Adds # to # Cold Damage to Spells and Attacks",
+            "tags": {},
+            "rule": "start = 'Adds ' valuea:integer ' to ' valueb:integer ' Cold Damage to Spells and Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "Adds # to # Fire Damage to Spells and Attacks",
+            "tags": {},
+            "rule": "start = 'Adds ' valuea:integer ' to ' valueb:integer ' Fire Damage to Spells and Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "Adds # to # Lightning Damage to Spells and Attacks",
+            "tags": {},
+            "rule": "start = 'Adds ' valuea:integer ' to ' valueb:integer ' Lightning Damage to Spells and Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "#% increased Damage with Bleeding",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Damage with Bleeding' { return value; }\n"
+        },
+        {
+            "name": "#% reduced Attribute Requirements",
+            "tags": {},
+            "rule": "start = value:npcntincred ' Attribute Requirements' { return value; }\n"
+        },
+        {
+            "name": "#% reduced Bleed Duration on you",
+            "tags": {},
+            "rule": "start = value:npcntincred ' Bleed Duration on you' { return value; }\n"
+        },
+        {
+            "name": "#% reduced Effect of Chill on you",
+            "tags": {},
+            "rule": "start = value:npcntincred ' Effect of Chill on you' { return value; }\n"
+        },
+        {
+            "name": "#% reduced Effect of Chill and Shock on you",
+            "tags": {},
+            "rule": "start = value:npcntincred ' Effect of Chill and Shock on you' { return value; }\n"
+        },
+        {
+            "name": "#% reduced Effect of Curses on you",
+            "tags": {},
+            "rule": "start = value:npcntincred ' Effect of Curses on you' { return value; }\n"
+        },
+        {
+            "name": "#% reduced Effect of Shock on you",
+            "tags": {},
+            "rule": "start = value:npcntincred ' Effect of Shock on you' { return value; }\n"
+        },
+        {
+            "name": "#% reduced Ignite Duration on you",
+            "tags": {},
+            "rule": "start = value:npcntincred ' Ignite Duration on you' { return value; }\n"
+        },
+        {
+            "name": "#% reduced Poison Duration on you",
+            "tags": {},
+            "rule": "start = value:npcntincred ' Poison Duration on you' { return value; }\n"
+        },
+        {
+            "name": "+#% to Fire and Cold Resistances",
+            "tags": {"Fire Resistance": 1.0, "Cold Resistance": 1.0, "Elemental Resistance": 2.0},
+            "rule": "start = value:pminteger '% to Fire and Cold Resistances' { return value; }\n"
+        },
+        {
+            "name": "#% increased Attack and Cast Speed",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Attack and Cast Speed' { return value; }\n"
+        },
+        {
+            "name": "+#% to Cold and Lightning Resistances",
+            "tags": {"Cold Resistance": 1.0, "Lightning Resistance": 1.0, "Elemental Resistance": 2.0},
+            "rule": "start = value:pminteger '% to Cold and Lightning Resistances' { return value; }\n"
+        },
+        {
+            "name": "#% increased Flask Effect Duration",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Flask Effect Duration' { return value; }\n"
+        },
+        {
+            "name": "#% increased Flask Life Recovery rate",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Flask Life Recovery rate' { return value; }\n"
+        },
+        {
+            "name": "#% increased Flask Mana Recovery rate",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Flask Mana Recovery rate' { return value; }\n"
+        },
+        {
+            "name": "Flasks applied to you have #% increased Effect",
+            "tags": {},
+            "rule": "start = 'Flasks applied to you have ' value:pcntincdec ' increased Effec' { return value; }\n"
+        },
+        {
+            "name": "#% increased Flask Charges gained",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Flask Charges gained' { return value; }\n"
+        },
+        {
+            "name": "Attacks have #% chance to cause Bleeding",
+            "tags": {},
+            "rule": "start = 'Attacks have ' value:integer '% chance to cause Bleeding' { return value; }\n"
+        },
+        {
+            "name": "#% of Damage taken Recouped as Life",
+            "tags": {},
+            "rule": "start = value:integer '% of Damage taken Recouped as Life' { return value; }\n"
+        },
+        {
+            "name": "#% of Damage taken Recouped as Mana",
+            "tags": {},
+            "rule": "start = value:integer '% of Damage taken Recouped as Mana' { return value; }\n"
+        },
+        {
+            "name": "+#% to Fire and Lightning Resistances",
+            "tags": {"Fire Resistance": 1.0, "Lightning Resistance": 1.0, "Elemental Resistance": 2.0},
+            "rule": "start = value:pminteger '% to Fire and Lightning Resistances' { return value; }\n"
+        },
+        {
+            "name": "+#% to Damage over Time Multiplier",
+            "tags": {},
+            "rule": "start = value:pminteger '% to Damage over Time Multiplier' { return value; }\n"
+        },
+        {
+            "name": "+#% to Damage over Time Multiplier for Bleeding from Hits with this Weapon",
+            "tags": {},
+            "rule": "start = value:pminteger '% to Damage over Time Multiplier for Bleeding from Hits with this Weapon' { return value; }\n"
+        },
+        {
+            "name": "+#% to Damage over Time Multiplier with Attack Skills",
+            "tags": {},
+            "rule": "start = value:pminteger '% to Damage over Time Multiplier with Attack Skills' { return value; }\n"
+        },
+        {
+            "name": "#% increased Melee Damage",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Melee Damage' { return value; }\n"
+        },
+        {
+            "name": "+# to Strength and Dexterity",
+            "tags": {"Attributes": 2.0, "Strength": 1.0, "Dexterity": 1.0},
+            "rule": "start = value:pminteger ' to Strength and Dexterity' { return value; }\n"
+        },
+        {
+            "name": "#% increased Chaos Damage",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Chaos Damage' { return value; }\n"
+        },
+        {
+            "name": "+# to Dexterity and Intelligence",
+            "tags": {"Attributes": 2.0, "Dexterity": 1.0, "Intelligence": 1.0},
+            "rule": "start = value:pminteger ' to Dexterity and Intelligence' { return value; }\n"
+        },
+        {
+            "name": "#% increased Energy Shield Recharge Rate",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Energy Shield Recharge Rate' { return value; }\n"
+        },
+        {
+            "name": "+# to Strength and Intelligence",
+            "tags": {"Attributes": 2.0, "Strength": 1.0, "Intelligence": 1.0},
+            "rule": "start = value:pminteger ' to Strength and Intelligence' { return value; }\n"
+        },
+        {
+            "name": "#% chance to Freeze",
+            "tags": {},
+            "rule": "start = value:integer '% chance to Freeze' { return value; }\n"
+        },
+        {
+            "name": "#% increased Freeze Duration on Enemies",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Freeze Duration on Enemies' { return value; }\n"
+        },
+        {
+            "name": "#% faster start of Energy Shield Recharge",
+            "tags": {},
+            "rule": "start = value:integer '% faster start of Energy Shield Recharge' { return value; }\n"
+        },
+        {
+            "name": "Enemies Blinded by you have #% reduced Critical Strike Chance",
+            "tags": {},
+            "rule": "start = 'Enemies Blinded by you have ' value:integer '% reduced Critical Strike Chance' { return value; }\n"
+        },
+        {
+            "name": "Enemies Intimidated by you have #% increased duration of stuns against them",
+            "tags": {},
+            "rule": "start = 'Enemies Blinded by you have ' value:pcntincdec ' duration of stuns against them' { return value; }\n"
+        },
+        {
+            "name": "Enemies Maimed by you take #% increased Damage Over Time",
+            "tags": {},
+            "rule": "start = 'Enemies Maimed by you take ' value:pcntincdec ' Damage Over Time' { return value; }\n"
+        },
+        {
+            "name": "#% chance to Blind Enemies on Hit with Attacks",
+            "tags": {},
+            "rule": "start = value:integer '% chance to Blind Enemies on Hit with Attacks' { return value; }\n"
+        },
+        {
+            "name": "#% chance to Taunt Enemies on Hit with Attacks",
+            "tags": {},
+            "rule": "start = value:integer '% chance to Taunt Enemies on Hit with Attacks' { return value; }\n"
+        },
+        {
+            "name": "#% chance to Ignite",
+            "tags": {},
+            "rule": "start = value:integer '% chance to Ignite' { return value; }\n"
+        },
+        {
+            "name": "#% chance to Cause Monsters to Flee",
+            "tags": {},
+            "rule": "start = value:integer '% chance to Cause Monsters to Flee' { return value; }\n"
+        },
+        {
+            "name": "Minions have #% chance to deal Double Damage",
+            "tags": {},
+            "rule": "start = 'Minions have ' value:integer '% chance to deal Double Damage' { return value; }\n"
+        },
+        {
+            "name": "Minions have #% chance to Ignite",
+            "tags": {},
+            "rule": "start = 'Minions have ' value:integer '% chance to Ignite' { return value; }\n"
+        },
+        {
+            "name": "Minions have #% chance to Poison Enemies on Hit",
+            "tags": {},
+            "rule": "start = 'Minions have ' value:integer '% chance to Poison Enemies on Hit' { return value; }\n"
+        },
+        {
+            "name": "Minions have #% chance to Taunt on Hit with Attacks",
+            "tags": {},
+            "rule": "start = 'Minions have ' value:integer '% chance to Taunt on Hit with Attacks' { return value; }\n"
+        },
+        {
+            "name": "Minions have #% chance to Blind on Hit with Attacks",
+            "tags": {},
+            "rule": "start = 'Minions have ' value:integer '% chance to Blind on Hit with Attacks' { return value; }\n"
+        },
+        {
+            "name": "Minions have #% chance to Hinder Enemies on Hit with Spells",
+            "tags": {},
+            "rule": "start = 'Minions have ' value:integer '% chance to Hinder Enemies on Hit with Spells' { return value; }\n"
+        },
+        {
+            "name": "Has # Abyssal Socket",
+            "tags": {},
+            "rule": "start = 'Has ' value:integer ' Abyssal Socket' { return value; }\n"
+        },
+        {
+            "name": "#% increased Impale Effect",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Impale Effect' { return value; }\n"
+        },
+        {
+            "name": "#% increased Ignite Duration on Enemies",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Ignite Duration on Enemies' { return value; }\n"
+        },
+        {
+            "name": "# to # Added Spell Physical Damage while Dual Wielding",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Spell Physical Damage while Dual Wielding' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Spell Cold Damage while Dual Wielding",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Spell Cold Damage while Dual Wielding' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Spell Fire Damage while Dual Wielding",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Spell Fire Damage while Dual Wielding' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Spell Lightning Damage while Dual Wielding",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Spell Lightning Damage while Dual Wielding' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Spell Chaos Damage while Dual Wielding",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Spell Chaos Damage while Dual Wielding' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Spell Physical Damage while wielding a Two Handed Weapon",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Spell Physical Damage while wielding a Two Handed Weapon' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Spell Cold Damage while wielding a Two Handed Weapon",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Spell Cold Damage while wielding a Two Handed Weapon' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Spell Fire Damage while wielding a Two Handed Weapon",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Spell Fire Damage while wielding a Two Handed Weapon' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Spell Lightning Damage while wielding a Two Handed Weapon",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Spell Lightning Damage while wielding a Two Handed Weapon' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Spell Chaos Damage while wielding a Two Handed Weapon",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Spell Chaos Damage while wielding a Two Handed Weapon' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Spell Physical Damage while holding a Shield",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Spell Physical Damage while holding a Shield' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Spell Cold Damage while holding a Shield",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Spell Cold Damage while holding a Shield' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Spell Fire Damage while holding a Shield",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Spell Fire Damage while holding a Shield' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Spell Lightning Damage while while holding a Shield",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Spell Lightning Damage while holding a Shield' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Spell Chaos Damage while while holding a Shield",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Spell Chaos Damage while holding a Shield' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "Adds # to # Chaos Damage to Attacks",
+            "tags": {},
+            "rule": "start = 'Adds ' valuea:integer ' to ' valueb:integer ' Chaos Damage to Attacks' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "Adds # to # Chaos Damage to Spells",
+            "tags": {},
+            "rule": "start = 'Adds ' valuea:integer ' to ' valueb:integer ' Chaos Damage to Spells' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "Adds # to # Chaos Damage",
+            "tags": {},
+            "rule": "start = 'Adds ' valuea:integer ' to ' valueb:integer ' Chaos Damage' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "#% Chance to Block Attack Damage",
+            "tags": {},
+            "rule": "start = value:integer '% Chance to Block Attack Damage' { return value; }\n"
+        },
+        {
+            "name": "+#% Chance to Block Attack Damage",
+            "tags": {},
+            "rule": "start = value:pminteger '% Chance to Block Attack Damage' { return value; }\n"
+        },
+        {
+            "name": "+#% Chance to Block Attack Damage while Dual Wielding",
+            "tags": {},
+            "rule": "start = value:pminteger '% Chance to Block Attack Damage while Dual Wielding' { return value; }\n"
+        },
+        {
+            "name": "+#% Chance to Block Attack Damage while holding a Shield",
+            "tags": {},
+            "rule": "start = value:pminteger '% Chance to Block Attack Damage while holding a Shield' { return value; }\n"
+        },
+        {
+            "name": "+#% Chance to Block Attack Damage while wielding a Staff",
+            "tags": {},
+            "rule": "start = value:pminteger '% Chance to Block Attack Damage while wielding a Staff' { return value; }\n"
+        },
+        {
+            "name": "+#% Chance to Block Spell Damage while Dual Wielding",
+            "tags": {},
+            "rule": "start = value:pminteger '% Chance to Block Spell Damage while Dual Wielding' { return value; }\n"
+        },
+        {
+            "name": "+#% Chance to Block Spell Damage while holding a Shield",
+            "tags": {},
+            "rule": "start = value:pminteger '% Chance to Block Spell Damage while holding a Shield' { return value; }\n"
+        },
+        {
+            "name": "+#% Chance to Block Spell Damage while wielding a Staff",
+            "tags": {},
+            "rule": "start = value:pminteger '% Chance to Block Spell Damage while wielding a Staff' { return value; }\n"
+        },
+        {
+            "name": "#% increased Attack Speed while Dual Wielding",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Attack Speed while Dual Wielding' { return value; }\n"
+        },
+        {
+            "name": "#% increased Attack Critical Strike Chance while Dual Wielding",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Attack Critical Strike Chance while Dual Wielding' { return value; }\n"
+        },
+        {
+            "name": "#% increased Attack Damage",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Attack Damage' { return value; }\n"
+        },
+        {
+            "name": "#% increased Attack Damage while Dual Wielding",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Attack Damage while Dual Wielding' { return value; }\n"
+        },
+        {
+            "name": "#% increased Physical Attack Damage while Dual Wielding",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Physical Attack Damage while Dual Wielding' { return value; }\n"
+        },
+        {
+            "name": "#% increased Attack Damage while holding a Shield",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Attack Damage while holding a Shield' { return value; }\n"
+        },
+        {
+            "name": "#% increased Attack Speed while holding a Shield",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Attack Speed while holding a Shield' { return value; }\n"
+        },
+        {
+            "name": "#% increased Attack Critical Strike Chance while holding a Shield",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Attack Speed while holding a Shield' { return value; }\n"
+        },
+        {
+            "name": "#% increased Attack Speed while holding a Shield",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Attack Speed while holding a Shield' { return value; }\n"
+        },
+        {
+            "name": "#% increased Attack Speed with Wands",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Attack Speed with Wands' { return value; }\n"
+        },
+        {
+            "name": "#% increased Attack Speed with Axes",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Attack Speed with Axes' { return value; }\n"
+        },
+        {
+            "name": "#% increased Attack Speed with Bows",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Attack Speed with Bows' { return value; }\n"
+        },
+        {
+            "name": "#% increased Attack Speed with Maces or Sceptres",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Attack Speed with Maces or Sceptres' { return value; }\n"
+        },
+        {
+            "name": "#% increased Damage with Maces or Sceptres",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Damage with Maces or Sceptres' { return value; }\n"
+        },
+        {
+            "name": "#% increased Attack Speed with One Handed Melee Weapons",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Attack Speed with One Handed Melee Weapons' { return value; }\n"
+        },
+        {
+            "name": "#% increased Attack Speed with Staves",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Attack Speed with Staves' { return value; }\n"
+        },
+        {
+            "name": "#% increased Damage with Staves",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Damage with Staves' { return value; }\n"
+        },
+        {
+            "name": "#% increased Attack Speed with Swords",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Attack Speed with Swords' { return value; }\n"
+        },
+        {
+            "name": "#% increased Damage with Swords",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Damage with Swords' { return value; }\n"
+        },
+        {
+            "name": "#% increased Attack Speed with Daggers",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Attack Speed with Daggers' { return value; }\n"
+        },
+        {
+            "name": "#% increased Damage with Daggers",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Damage with Daggers' { return value; }\n"
+        },
+        {
+            "name": "#% increased Attack Speed with Claws",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Attack Speed with Claws' { return value; }\n"
+        },
+        {
+            "name": "#% increased Damage with Claws",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Damage with Claws' { return value; }\n"
+        },
+        {
+            "name": "#% increased Attack Speed with Two Handed Melee Weapons",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Attack Speed with Two Handed Melee Weapons' { return value; }\n"
+        },
+        {
+            "name": "#% chance to Poison on Hit",
+            "tags": {},
+            "rule": "start = value:integer '% chance to Poison on Hit' { return value; }\n"
+        },
+        {
+            "name": "#% increased Poison Duration",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Poison Duration' { return value; }\n"
+        },
+        {
+            "name": "#% increased Bleeding Duration",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Bleeding Duration' { return value; }\n"
+        },
+        {
+            "name": "#% of Physical Damage from Hits taken as Cold Damage",
+            "tags": {},
+            "rule": "start = value:integer '% of Physical Damage from Hits taken as Cold Damage' { return value; }\n"
+        },
+        {
+            "name": "#% of Physical Damage from Hits taken as Lightning Damage",
+            "tags": {},
+            "rule": "start = value:integer '% of Physical Damage from Hits taken as Lightning Damage' { return value; }\n"
+        },
+        {
+            "name": "#% of Physical Damage from Hits taken as Fire Damage",
+            "tags": {},
+            "rule": "start = value:integer '% of Physical Damage from Hits taken as Fire Damage' { return value; }\n"
+        },
+        {
+            "name": "You and your Minions take #% reduced Reflected Elemental Damage",
+            "tags": {},
+            "rule": "start = 'You and your Minions take ' value:npcntincred ' Reflected Elemental Damage' { return value; }\n"
+        },
+        {
+            "name": "You and your Minions take #% reduced Reflected Physical Damage",
+            "tags": {},
+            "rule": "start = 'You and your Minions take ' value:npcntincred ' Reflected Physical Damage' { return value; }\n"
+        },
+        {
+            "name": "Corrupted Blood cannot be inflicted on you",
+            "tags": {},
+            "rule": "start = 'Corrupted Blood cannot be inflicted on you' { return 1; }\n"
+        },
+        {
+            "name": "You can apply an additional Curse",
+            "tags": {},
+            "rule": "start = 'You can apply an additional Curse' { return 1; }\n"
+        },
+        {
+            "name": "You cannot be Hindered",
+            "tags": {},
+            "rule": "start = 'You cannot be Hindered' { return 1; }\n"
+        },
+        {
+            "name": "You cannot be Maimed",
+            "tags": {},
+            "rule": "start = 'You cannot be Maimed' { return 1; }\n"
+        },
+        {
+            "name": "You cannot be Cursed with Silence",
+            "tags": {},
+            "rule": "start = 'You cannot be Cursed with Silence' { return 1; }\n"
+        },
+        {
+            "name": "Cannot be Chilled or Frozen while moving",
+            "tags": {},
+            "rule": "start = 'Cannot be Chilled or Frozen while moving' { return 1; }\n"
+        },
+        {
+            "name": "+#% increased Totem Life",
+            "tags": {},
+            "rule": "start = value:integer '% increased Totem Life' { return value; }\n"
+        },
+        {
+            "name": "Added Small Passive Skills also grant: #% increased Damage",
+            "tags": {},
+            "rule": "start = 'Added Small Passive Skills also grant: ' value:integer '% increased Damage' { return value; }\n"
+        },
+        {
+            "name": "Added Small Passive Skills also grant: +# to Maximum Mana",
+            "tags": {},
+            "rule": "start = 'Added Small Passive Skills also grant: ' value:pminteger ' to Maximum Mana' { return value; }\n"
+        },
+        {
+            "name": "Added Small Passive Skills also grant: +# to Maximum Energy Shield",
+            "tags": {},
+            "rule": "start = 'Added Small Passive Skills also grant: ' value:pminteger ' to Maximum Energy Shield' { return value; }\n"
+        },
+        {
+            "name": "Added Small Passive Skills also grant: +# to Maximum Life",
+            "tags": {},
+            "rule": "start = 'Added Small Passive Skills also grant: ' value:pminteger ' to Maximum Life' { return value; }\n"
+        },
+        {
+            "name": "Added Small Passive Skills also grant: +# to Armour",
+            "tags": {},
+            "rule": "start = 'Added Small Passive Skills also grant: ' value:pminteger ' to Armour' { return value; }\n"
+        },
+        {
+            "name": "Added Small Passive Skills also grant: +# to Evasion",
+            "tags": {},
+            "rule": "start = 'Added Small Passive Skills also grant: ' value:pminteger ' to Evasion' { return value; }\n"
+        },
+        {
+            "name": "Added Small Passive Skills also grant: +# to All Attributes",
+            "tags": {},
+            "rule": "start = 'Added Small Passive Skills also grant: ' value:pminteger ' to All Attributes' { return value; }\n"
+        },
+        {
+            "name": "Added Small Passive Skills also grant: +# to Strength",
+            "tags": {},
+            "rule": "start = 'Added Small Passive Skills also grant: ' value:pminteger ' to Strength' { return value; }\n"
+        },
+        {
+            "name": "Added Small Passive Skills also grant: +# to Intelligence",
+            "tags": {},
+            "rule": "start = 'Added Small Passive Skills also grant: ' value:pminteger ' to Intelligence' { return value; }\n"
+        },
+        {
+            "name": "Added Small Passive Skills also grant: +# to Dexterity",
+            "tags": {},
+            "rule": "start = 'Added Small Passive Skills also grant: ' value:pminteger ' to Dexterity' { return value; }\n"
+        },
+        {
+            "name": "Added Small Passive Skills also grant: +#% to Fire Resistance",
+            "tags": {},
+            "rule": "start = 'Added Small Passive Skills also grant: ' value:pminteger '% to Fire Resistance' { return value; }\n"
+        },
+        {
+            "name": "Added Small Passive Skills also grant: +#% to Cold Resistance",
+            "tags": {},
+            "rule": "start = 'Added Small Passive Skills also grant: ' value:pminteger '% to Cold Resistance' { return value; }\n"
+        },
+        {
+            "name": "Added Small Passive Skills also grant: +#% to Lightning Resistance",
+            "tags": {},
+            "rule": "start = 'Added Small Passive Skills also grant: ' value:pminteger '% to Lightning Resistance' { return value; }\n"
+        },
+        {
+            "name": "Added Small Passive Skills also grant: +#% to all Elemental Resistances",
+            "tags": {},
+            "rule": "start = 'Added Small Passive Skills also grant: ' value:pminteger '% to all Elemental Resistances' { return value; }\n"
+        },
+        {
+            "name": "#% increased Damage with One Handed Weapons",
+            "tags": {},
+            "rule": "start = value:integer '% increased Damage with One Handed Weapons' { return value; }\n"
+        },
+        {
+            "name": "#% increased Damage with Two Handed Weapons",
+            "tags": {},
+            "rule": "start = value:integer '% increased Damage with Two Handed Weapons' { return value; }\n"
+        },
+        {
+            "name": "+#% to Chaos Damage over Time Multiplier",
+            "tags": {},
+            "rule": "start = value:pminteger '% to Chaos Damage over Time Multiplier' { return value; }\n"
+        },
+        {
+            "name": "#% chance to Avoid being Ignited",
+            "tags": {},
+            "rule": "start = value:integer '% chance to Avoid being Ignited' { return value; }\n"
+        },
+        {
+            "name": "#% chance to Avoid being Shocked",
+            "tags": {},
+            "rule": "start = value:integer '% chance to Avoid being Shocked' { return value; }\n"
+        },
+        {
+            "name": "#% chance to Avoid being Chilled",
+            "tags": {},
+            "rule": "start = value:integer '% chance to Avoid being Chilled' { return value; }\n"
+        },
+        {
+            "name": "#% chance to Avoid being Frozen",
+            "tags": {},
+            "rule": "start = value:integer '% chance to Avoid being Frozen' { return value; }\n"
+        },
+        {
+            "name": "#% chance to Avoid being Poisoned",
+            "tags": {},
+            "rule": "start = value:integer '% chance to Avoid being Poisoned' { return value; }\n"
+        },
+        {
+            "name": "#% chance to Avoid being Stunned",
+            "tags": {},
+            "rule": "start = value:integer '% chance to Avoid being Stunned' { return value; }\n"
+        },
+        {
+            "name": "#% chance to Avoid Bleeding",
+            "tags": {},
+            "rule": "start = value:integer '% chance to Avoid Bleeding' { return value; }\n"
+        },
+        {
+            "name": "#% chance to Avoid Elemental Ailments",
+            "tags": {},
+            "rule": "start = value:integer '% chance to Avoid Elemental Ailments' { return value; }\n"
+        },
+        {
+            "name": "#% chance to Avoid Elemental Ailments while you have Elusive",
+            "tags": {},
+            "rule": "start = value:integer '% chance to Avoid Elemental Ailments while you have Elusive' { return value; }\n"
+        },
+        {
+            "name": "# to # Added Spell Cold Damage while holding a Shield",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Spell Cold Damage while holding a Shield' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Spell Fire Damage to Spells while holding a Shield",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Spell Fire Damage while holding a Shield' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Spell Lightning Damage while holding a Shield",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Spell Lightning Damage while holding a Shield' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "# to # Added Spell Physical Damage while holding a Shield",
+            "tags": {},
+            "rule": "start = valuea:integer ' to ' valueb:integer ' Added Spell Physical Damage while holding a Shield' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "Bow Attacks fire an additional Target",
+            "tags": {},
+            "rule": "start = 'Bow Attacks fire an additional Target' { return 1.0; }\n"
+        },
+        {
+            "name": "Projectiles Pierce an additional Target",
+            "tags": {},
+            "rule": "start = 'Projectiles Pierce an additional Target' { return 1.0; }\n"
+        },
+        {
+            "name": "Arrows Pierce an additional Target",
+            "tags": {},
+            "rule": "start = 'Arrows Pierce an additional Target' { return 1.0; }\n"
+        },
+        {
+            "name": "Projectiles Pierce #>1 additional Target",
+            "tags": {},
+            "rule": "start = 'Projectiles Pierce ' value:integer ' additional Target' { return value; }\n"
+        },
+        {
+            "name": "Grants Level # Envy Skill",
+            "tags": {},
+            "rule": "start = 'Grants Level ' value:integer ' Envy Skill' { return value; }\n"
+        },
+        {
+            "name": "Grants Level # Enduring Cry Skill",
+            "tags": {},
+            "rule": "start = 'Grants Level ' value:integer ' Enduring Cry Skill' { return value; }\n"
+        },
+        {
+            "name": "Grants Level # Rallying Cry Skill",
+            "tags": {},
+            "rule": "start = 'Grants Level ' value:integer ' Rallying Cry Skill' { return value; }\n"
+        },
+        {
+            "name": "Grants Level # Intimidating Cry Skill",
+            "tags": {},
+            "rule": "start = 'Grants Level ' value:integer ' Intimidating Cry Skill' { return value; }\n"
+        },
+        {
+            "name": "Socketed Gems are supported by Level # Life Leech",
+            "tags": {},
+            "rule": "start = 'Socketed Gems are supported by  Level ' value:integer ' Life Leech' { return value; }\n"
+        },
+        {
+            "name": "Socketed Gems are supported by Level # Increased Area of Effect",
+            "tags": {},
+            "rule": "start = 'Socketed Gems are supported by  Level ' value:integer ' Increased Area of Effect' { return value; }\n"
+        },
+        {
+            "name": "Cannot be Knocked Back",
+            "tags": {},
+            "rule": "start = 'Cannot be Knocked Back' { return 1.0; }\n"
+        },
+        {
+            "name": "#% increased total Recovery per second from Life Leech",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' total Recovery per second from Life Leech' { return value; }\n"
+        },
+        {
+            "name": "+#% to Quality of Socketed Skill Gems",
+            "tags": {},
+            "rule": "start = value:pminteger '% to Quality of Socketed Skill Gems' { return value; }\n"
+        },
+        {
+            "name": "+#% to Quality of Socketed Gems",
+            "tags": {},
+            "rule": "start = value:pminteger '% to Quality of Socketed Gems' { return value; }\n"
+        },
+        {
+            "name": "-# to Total Mana Cost of Skills",
+            "tags": {},
+            "rule": "start = '-' value:integer ' to Total Mana Cost of Skills' { return value; }\n"
+        },
+        {
+            "name": "Non-Channelling Skills have -# to Total Mana Cost",
+            "tags": {},
+            "rule": "start = 'Non-Channelling Skills have -' value:integer ' to Total Mana Cost' { return value; }\n"
+        },
+        {
+            "name": "+# to Level of all Spell Skill Gems",
+            "tags": {},
+            "rule": "start = value:pminteger ' to Level of all Spell Skill Gems' { return value; }\n"
+        },
+        {
+            "name": "+# to Level of Socketed Fire Gems",
+            "tags": {},
+            "rule": "start = value:pminteger ' to Level of Socketed Fire Gems' { return value; }\n"
+        },
+        {
+            "name": "+# to Level of Socketed Cold Gems",
+            "tags": {},
+            "rule": "start = value:pminteger ' to Level of Socketed Cold Gems' { return value; }\n"
+        },
+        {
+            "name": "+# to Level of Socketed Lightning Gems",
+            "tags": {},
+            "rule": "start = value:pminteger ' to Level of Lightning Fire Gems' { return value; }\n"
+        },
+        {
+            "name": "+# to Level of Socketed Chaos Gems",
+            "tags": {},
+            "rule": "start = value:pminteger ' to Level of Socketed Chaos Gems' { return value; }\n"
+        },
+        {
+            "name": "+# to Level of Socketed Bow Gems",
+            "tags": {},
+            "rule": "start = value:pminteger ' to Level of Socketed Bow Gems' { return value; }\n"
+        },
+        {
+            "name": "+# to Level of Socketed Melee Gems",
+            "tags": {},
+            "rule": "start = value:pminteger ' to Level of Socketed Melee Gems' { return value; }\n"
+        },
+        {
+            "name": "+# to Level of Socketed Minion Gems",
+            "tags": {},
+            "rule": "start = value:pminteger ' to Level of Socketed Minion Gems' { return value; }\n"
+        },
+        {
+            "name": "Damage Penetrates #% Lightning Resistance",
+            "tags": {},
+            "rule": "start = 'Damage Penetrates ' value:integer '% Lightning Resistance' { return value; }\n"
+        },
+        {
+            "name": "Damage Penetrates #% Cold Resistance",
+            "tags": {},
+            "rule": "start = 'Damage Penetrates ' value:integer '% Cold Resistance' { return value; }\n"
+        },
+        {
+            "name": "Damage Penetrates #% Fire Resistance",
+            "tags": {},
+            "rule": "start = 'Damage Penetrates ' value:integer '% Fire Resistance' { return value; }\n"
+        },
+        {
+            "name": "Damage Penetrates #% Elemental Resistances",
+            "tags": {},
+            "rule": "start = 'Damage Penetrates ' value:integer '% Elemental Resistances' { return value; }\n"
+        },
+        {
+            "name": "Damage Penetrates #% Elemental Resistances if you haven't Killed Recently",
+            "tags": {},
+            "rule": "start = 'Damage Penetrates ' value:integer \"% Elemental Resistances if you haven't Killed Recently\" { return value; }\n"
+        },
+        {
+            "name": "Damage Penetrates #% Chaos Resistance",
+            "tags": {},
+            "rule": "start = 'Damage Penetrates ' value:integer '% Chaos Resistance' { return value; }\n"
+        },
+        {
+            "name": "Attacks with this Weapon Penetrates #% Lightning Resistance",
+            "tags": {},
+            "rule": "start = 'Attacks with this Weapon Penetrates ' value:integer '% Lightning Resistance' { return value; }\n"
+        },
+        {
+            "name": "Attacks with this Weapon Penetrates #% Cold Resistance",
+            "tags": {},
+            "rule": "start = 'Attacks with this Weapon Penetrates ' value:integer '% Cold Resistance' { return value; }\n"
+        },
+        {
+            "name": "Attacks with this Weapon Penetrates #% Fire Resistance",
+            "tags": {},
+            "rule": "start = 'Attacks with this Weapon Penetrates ' value:integer '% Fire Resistance' { return value; }\n"
+        },
+        {
+            "name": "+#% to maximum Lightning Resistance",
+            "tags": {},
+            "rule": "start = value:pminteger '% to maximum Lightning Resistance' { return value; }\n"
+        },
+        {
+            "name": "+#% to maximum Cold Resistance",
+            "tags": {},
+            "rule": "start = value:pminteger '% to maximum Cold Resistance' { return value; }\n"
+        },
+        {
+            "name": "+#% to maximum Fire Resistance",
+            "tags": {},
+            "rule": "start = value:pminteger '% to maximum Fire Resistance' { return value; }\n"
+        },
+        {
+            "name": "+#% to maximum Chaos Resistance",
+            "tags": {},
+            "rule": "start = value:pminteger '% to maximum Chaos Resistance' { return value; }\n"
+        },
+        {
+            "name": "+# to Maximum Endurance Charges",
+            "tags": {},
+            "rule": "start = value:pminteger ' to Maximum Endurance Charges' { return value; }\n"
+        },
+        {
+            "name": "+# to Maximum Power Charges",
+            "tags": {},
+            "rule": "start = value:pminteger ' to Maximum Power Charges' { return value; }\n"
+        },
+        {
+            "name": "+# to Maximum Frenzy Charges",
+            "tags": {},
+            "rule": "start = value:pminteger ' to Maximum Frenzy Charges' { return value; }\n"
+        },
+        {
+            "name": "#% increased Spell Damage per 10 Strength",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Spell Damage per 10 Strength' { return value; }\n"
+        },
+        {
+            "name": "#% increased Spell Damage per 10 Dexterity",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Spell Damage per 10 Dexterity' { return value; }\n"
+        },
+        {
+            "name": "#% increased Spell Damage per 10 Intelligence",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Spell Damage per 10 Intelligence' { return value; }\n"
+        },
+        {
+            "name": "Warcry Skills have #% increased Area of Effect",
+            "tags": {},
+            "rule": "start = 'Warcry Skills have ' value:pcntincdec ' Area of Effect' { return value; }\n"
+        },
+        {
+            "name": "#% of Physical Damage Converted to Lightning Damage",
+            "tags": {},
+            "rule": "start = value:integer '% of Physical Damage Converted to Lightning Damage' { return value; }\n"
+        },
+        {
+            "name": "#% of Physical Damage Converted to Cold Damage",
+            "tags": {},
+            "rule": "start = value:integer '% of Physical Damage Converted to Cold Damage' { return value; }\n"
+        },
+        {
+            "name": "#% of Physical Damage Converted to Fire Damage",
+            "tags": {},
+            "rule": "start = value:integer '% of Physical Damage Converted to Fire Damage' { return value; }\n"
+        },
+        {
+            "name": "#% of Physical Damage Converted to Chaos Damage",
+            "tags": {},
+            "rule": "start = value:integer '% of Physical Damage Converted to Chaos Damage' { return value; }\n"
+        },
+        {
+            "name": "Gain #% of Physical Damage as Extra Lightning Damage",
+            "tags": {},
+            "rule": "start = 'Gain ' value:integer '% of Physical Damage as Extra Lightning Damage' { return value; }\n"
+        },
+        {
+            "name": "Gain #% of Physical Damage as Extra Cold Damage",
+            "tags": {},
+            "rule": "start = 'Gain ' value:integer '% of Physical Damage as Extra Cold Damage' { return value; }\n"
+        },
+        {
+            "name": "Gain #% of Physical Damage as Extra Fire Damage",
+            "tags": {},
+            "rule": "start = 'Gain ' value:integer '% of Physical Damage as Extra Fire Damage' { return value; }\n"
+        },
+        {
+            "name": "Gain #% of Physical Damage as Extra Chaos Damage",
+            "tags": {},
+            "rule": "start = 'Gain ' value:integer '% of Physical Damage as Extra Chaos Damage' { return value; }\n"
+        },
+        {
+            "name": "Gain #% of Non-Chaos Damage as extra Chaos Damage",
+            "tags": {},
+            "rule": "start = 'Gain ' value:integer '% of Non-Chaos Damage as extra Chaos Damage' { return value; }\n"
+        },
+        {
+            "name": "#% of Lightning Damage Converted to Cold Damage",
+            "tags": {},
+            "rule": "start = value:integer '% of Lightning Damage Converted to Cold Damage' { return value; }\n"
+        },
+        {
+            "name": "#% of Lightning Damage Converted to Fire Damage",
+            "tags": {},
+            "rule": "start = value:integer '% of Lightning Damage Converted to Fire Damage' { return value; }\n"
+        },
+        {
+            "name": "#% of Lightning Damage Converted to Chaos Damage",
+            "tags": {},
+            "rule": "start = value:integer '% of Lightning Damage Converted to Chaos Damage' { return value; }\n"
+        },
+        {
+            "name": "Gain #% of Lightning Damage as Extra Cold Damage",
+            "tags": {},
+            "rule": "start = 'Gain ' value:integer '% of Lightning Damage as Extra Cold Damage' { return value; }\n"
+        },
+        {
+            "name": "Gain #% of Lightning Damage as Extra Fire Damage",
+            "tags": {},
+            "rule": "start = 'Gain ' value:integer '% of Lightning Damage as Extra Fire Damage' { return value; }\n"
+        },
+        {
+            "name": "Gain #% of Lightning Damage as Extra Chaos Damage",
+            "tags": {},
+            "rule": "start = 'Gain ' value:integer '% of Lightning Damage as Extra Chaos Damage' { return value; }\n"
+        },
+        {
+            "name": "#% of Cold Damage Converted to Fire Damage",
+            "tags": {},
+            "rule": "start = value:integer '% of Cold Damage Converted to Fire Damage' { return value; }\n"
+        },
+        {
+            "name": "#% of Cold Damage Converted to Chaos Damage",
+            "tags": {},
+            "rule": "start = value:integer '% of Cold Damage Converted to Chaos Damage' { return value; }\n"
+        },
+        {
+            "name": "Gain #% of Cold Damage as Extra Fire Damage",
+            "tags": {},
+            "rule": "start = 'Gain ' value:integer '% of Cold Damage as Extra Fire Damage' { return value; }\n"
+        },
+        {
+            "name": "Gain #% of Cold Damage as Extra Chaos Damage",
+            "tags": {},
+            "rule": "start = 'Gain ' value:integer '% of Cold Damage as Extra Chaos Damage' { return value; }\n"
+        },
+        {
+            "name": "#% of Fire Damage Converted to Chaos Damage",
+            "tags": {},
+            "rule": "start = value:integer '% of Fire Damage Converted to Chaos Damage' { return value; }\n"
+        },
+        {
+            "name": "Gain #% of Fire Damage as Extra Chaos Damage",
+            "tags": {},
+            "rule": "start = 'Gain ' value:integer '% of Fire Damage as Extra Chaos Damage' { return value; }\n"
+        },
+        {
+            "name": "Gain #% of Physical Damage as Extra Fire Damage if you've dealt a Critical Strike Recently",
+            "tags": {},
+            "rule": "start = 'Gain ' value:integer \"% of Physical Damage as Extra Fire Damage if you've dealt a Critical Strike Recently\" { return value; }\n"
+        },
+        {
+            "name": "Unaffected by Shocked Ground",
+            "tags": {},
+            "rule": "start = 'Unaffected by Shocked Ground' { return 1.0; }\n"
+        },
+        {
+            "name": "Unaffected by Chilled Ground",
+            "tags": {},
+            "rule": "start = 'Unaffected by Chilled Ground' { return 1.0; }\n"
+        },
+        {
+            "name": "Unaffected by Burning Ground",
+            "tags": {},
+            "rule": "start = 'Unaffected by Burning Ground' { return 1.0; }\n"
+        },
+        {
+            "name": "Unaffected by Desecrated Ground",
+            "tags": {},
+            "rule": "start = 'Unaffected by Desecrated Ground' { return 1.0; }\n"
+        },
+        {
+            "name": "#% chance to gain an Endurance Charge on Kill",
+            "tags": {},
+            "rule": "start = value:integer '% chance to gain an Endurance Charge on Kill' { return value; }\n"
+        },
+        {
+            "name": "#% chance to gain an Frenzy Charge on Kill",
+            "tags": {},
+            "rule": "start = value:integer '% chance to gain an Frenzy Charge on Kill' { return value; }\n"
+        },
+        {
+            "name": "#% chance to gain an Power Charge on Kill",
+            "tags": {},
+            "rule": "start = value:integer '% chance to gain an Power Charge on Kill' { return value; }\n"
+        },
+        {
+            "name": "#% chance to gain Phasing for 4 seconds on Kill",
+            "tags": {},
+            "rule": "start = value:integer '% chance to gain Phasing for 4 seconds on Kill' { return value; }\n"
+        },
+        {
+            "name": "#% chance to gain Unholy Might for X seconds on Kill",
+            "tags": {},
+            "rule": "start = value:integer '% chance to gain an Unholy Might for ' valueb:integer ' seconds on Kill' { return value; }\n"
+        },
+        {
+            "name": "#% chance to Gain Unholy Might for 4 seconds on Melee Kill",
+            "tags": {},
+            "rule": "start = value:integer '% chance to Gain Unholy Might for 4 seconds on Melee Kill' { return value; }\n"
+        },
+        {
+            "name": "#% chance to gain Onslaught for 4 seconds on Kill",
+            "tags": {},
+            "rule": "start = value:integer '% chance to gain Onslaught for 4 seconds on Kill' { return value; }\n"
+        },
+        {
+            "name": "#% increased Endurance Charge Duration",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Endurance Charge Duration' { return value; }\n"
+        },
+        {
+            "name": "#% increased Frenzy Charge Duration",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Frenzy Charge Duration' { return value; }\n"
+        },
+        {
+            "name": "#% increased Power Charge Duration",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Power Charge Duration' { return value; }\n"
+        },
+        {
+            "name": "Adds # to # Lightning Damage to Attacks with this Weapon per 10 Intelligence",
+            "tags": {},
+            "rule": "start = 'Adds ' valuea:integer ' to ' valueb:integer ' Lightning Damage to Attacks with this Weapon per 10 Intelligence' { return (valuea + valueb)/2.0; }\n"
+        },
+        {
+            "name": "+# to Armour if you've Blocked Recently",
+            "tags": {},
+            "rule": "start = value:pminteger \" to Armour if you've blocked recently\" { return value; }\n"
+        },
+        {
+            "name": "#% additional Physical Damage Reduction",
+            "tags": {},
+            "rule": "start = value:integer '% additional Physical Damage Reduction' { return value; }\n"
+        },
+        {
+            "name": "#% additional Physical Damage Reduction against Abyssal Monsters",
+            "tags": {},
+            "rule": "start = value:integer '% additional Physical Damage Reduction against Abyssal Monsters' { return value; }\n"
+        },
+        {
+            "name": "#% additional Physical Damage Reduction if you weren't Damaged by a Hit Recently",
+            "tags": {},
+            "rule": "start = value:integer \"% additional Physical Damage Reduction if you weren't Damaged by a Hit Recently\" { return value; }\n"
+        },
+        {
+            "name": "Triggered Spells deal #% increased Spell Damage",
+            "tags": {},
+            "rule": "start = 'Triggered Spells deal ' value:pcntincdec ' Spell Damage' { return value; }\n"
+        },
+        {
+            "name": "Overwhelm #% Physical Damage Reduction",
+            "tags": {},
+            "rule": "start = 'Overwhelm ' value:integer '% Physical Damage Reduction' { return value; }\n"
+        },
+        {
+            "name": "Anger has #% increased Aura Effect",
+            "tags": {},
+            "rule": "start = 'Anger has ' value:pcntincdec ' Aura Effect' { return value; }\n"
+        },
+        {
+            "name": "Zealotry has #% increased Aura Effect",
+            "tags": {},
+            "rule": "start = 'Zealotry has ' value:pcntincdec ' Aura Effect' { return value; }\n"
+        },
+        {
+            "name": "Hatred has #% increased Aura Effect",
+            "tags": {},
+            "rule": "start = 'Hatred has ' value:pcntincdec ' Aura Effect' { return value; }\n"
+        },
+        {
+            "name": "Wrath has #% increased Aura Effect",
+            "tags": {},
+            "rule": "start = 'Wrath has ' value:pcntincdec ' Aura Effect' { return value; }\n"
+        },
+        {
+            "name": "Malevolence has #% increased Aura Effect",
+            "tags": {},
+            "rule": "start = 'Malevolence has ' value:pcntincdec ' Aura Effect' { return value; }\n"
+        },
+        {
+            "name": "Determination has #% increased Aura Effect",
+            "tags": {},
+            "rule": "start = 'Determination has ' value:pcntincdec ' Aura Effect' { return value; }\n"
+        },
+        {
+            "name": "Grace has #% increased Aura Effect",
+            "tags": {},
+            "rule": "start = 'Grace has ' value:pcntincdec ' Aura Effect' { return value; }\n"
+        },
+        {
+            "name": "Discipline has #% increased Aura Effect",
+            "tags": {},
+            "rule": "start = 'Malevolence has ' value:pcntincdec ' Aura Effect' { return value; }\n"
+        },
+        {
+            "name": "#% increased Block Recovery",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Block Recovery' { return value; }\n"
+        },
+        {
+            "name": "#% increased Stun and Block Recovery",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Stun and Block Recovery' { return value; }\n"
+        },
+        {
+            "name": "#% increased Life Regeneration rate",
+            "tags": {},
+            "rule": "start = value:pcntincdec ' Life Regeneration rate' { return value; }\n"
+        },
+        {
+            "name": "#% reduced Damage taken from Damage Over Time",
+            "tags": {},
+            "rule": "start = value:npcntincred ' Damage taken from Damage Over Time' { return value; }\n"
+        },
+        {
+            "name": "#% reduced Cold Damage",
+            "tags": {},
+            "rule": "start = value:npcntincred ' Cold Damage taken' { return value; }\n"
+        },
+        {
+            "name": "#% reduced Fire Damage",
+            "tags": {},
+            "rule": "start = value:npcntincred ' Fire Damage taken' { return value; }\n"
+        },
+        {
+            "name": "#% reduced Lightning Damage",
+            "tags": {},
+            "rule": "start = value:npcntincred ' Lightning Damage taken' { return value; }\n"
+        },
+        {
+            "name": "#% reduced Physical Damage",
+            "tags": {},
+            "rule": "start = value:npcntincred ' Physical Damage taken' { return value; }\n"
+        },
+        {
+            "name": "-# Cold Damage taken from Hits",
+            "tags": {},
+            "rule": "start = '-' value:integer ' Cold Damage taken from Hits' { return value; }\n"
+        },
+        {
+            "name": "-# Fire Damage taken from Hits",
+            "tags": {},
+            "rule": "start = '-' value:integer ' Fire Damage taken from Hits' { return value; }\n"
+        },
+        {
+            "name": "-# Lightning Damage taken from Hits",
+            "tags": {},
+            "rule": "start = '-' value:integer ' Lightning Damage taken from Hits' { return value; }\n"
+        },
+        {
+            "name": "-# Physical Damage taken from Attack Hits",
+            "tags": {},
+            "rule": "start = '-' value:integer ' Physical Damage taken from Attack Hits' { return value; }\n"
+        }
+
+    ]
+}
