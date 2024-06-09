@@ -38,7 +38,7 @@ const createSearch = (): void => {
   const inventorysearchWindow = new BrowserWindow({
     height: 600,
     width: 700,
-    title: "PoE - Admiral's Nook",
+    title: "PoE - Admiral's Nook Tab View",
     webPreferences: {
       nodeIntegration: true,
       preload: INVENTORY_VIEW_WINDOW_PRELOAD_WEBPACK_ENTRY
@@ -54,8 +54,8 @@ const createWindow = () : void => {
 const settingsWindow = new BrowserWindow({
     height: 600,
     width: 800,
-    show: false,
-    title: "PoE - Admiral's Nook Settings",
+//    show: false,
+    title: "PoE - Admiral's Nook General Settings",
     webPreferences: {
       preload: SETTINGS_WINDOW_PRELOAD_WEBPACK_ENTRY
     },
@@ -84,7 +84,7 @@ const searchEditWindow = new BrowserWindow({
   height: 600,
   width: 800,
   show: true,
-  title: "PoE - Admiral's Nook Configure",
+  title: "PoE - Admiral's Nook Search Configure",
   webPreferences: {
     preload: SEARCH_EDIT_WINDOW_PRELOAD_WEBPACK_ENTRY
   },

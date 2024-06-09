@@ -15,7 +15,7 @@ export class ANSettings implements JSONable<ANSettings> {
     dump_tab_2 : number
     dump_tab_3 : number
     constructor() {
-        this.league = "Ancestor"
+        this.league = "Necropolis"
         this.account_name = ""
         this.fetch = false
         this.poesessid = ""
@@ -60,10 +60,10 @@ export class ANSettings implements JSONable<ANSettings> {
         this.fetch = getProperty(input, 'fetch', false) as boolean
         this.poesessid = getProperty(input, 'poesessid', "") as string
         this.search_filename = getProperty(input, 'search_filename', "") as string
-        this.dump_tab_0 = getProperty(input, 'dump_tab_0', -1) as number
-        this.dump_tab_1 = getProperty(input, 'dump_tab_1', -1) as number
-        this.dump_tab_2 = getProperty(input, 'dump_tab_2', -1) as number
-        this.dump_tab_3 = getProperty(input, 'dump_tab_3', -1) as number
+        this.dump_tab_0 = getProperty(input, 'dump_tab_0', 0) as number
+        this.dump_tab_1 = getProperty(input, 'dump_tab_1', 0) as number
+        this.dump_tab_2 = getProperty(input, 'dump_tab_2', 0) as number
+        this.dump_tab_3 = getProperty(input, 'dump_tab_3', 0) as number
         return this
     }
     rejson() : object {
