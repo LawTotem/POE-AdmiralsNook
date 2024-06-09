@@ -4,6 +4,8 @@
 
 ## About
 
+![image](images/Faustus.png)
+
 *Ahoy there!*
 
 Have you become so fast at hopping through portals that time spent looking through your found loot feels like standing in lava?
