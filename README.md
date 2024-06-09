@@ -19,7 +19,7 @@ I'll quickly look through your items and highlight the ones which you may want t
 *Happy Hunting!*
 
 ## Installing
- See the [Releases](github.com/LawTotem/POE-AdmiralsNook/releases).
+ See the [Releases](https://github.com/LawTotem/POE-AdmiralsNook/releases).
  
  ***After installing, you will need to pick a search filename, see General Settings, and restart the application***
 
